@@ -1,0 +1,38 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "net.exe",
+    "ProcessCommandLine": "net.exe user ana",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "net1.exe",
+    "ProcessCommandLine": "net1.exe localgroup administrators",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 101
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "net.exe",
+    "ProcessCommandLine": "net.exe localgroup users conta-teste /add",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 102
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "net.exe",
+    "ProcessCommandLine": "net.exe user conta-teste /add /domain",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 103
+  }
+]

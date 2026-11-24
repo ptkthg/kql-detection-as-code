@@ -1,0 +1,29 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "schtasks.exe",
+    "ProcessCommandLine": "schtasks.exe /create /tn Exemplo /tr C:\\Users\\ana\\AppData\\Local\\exemplo.exe /sc daily /ru SYSTEM",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 1
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "SCHTASKS.EXE",
+    "ProcessCommandLine": "schtasks.exe /CREATE /tn Rotina /tr C:\\scripts\\rotina.cmd /sc daily",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 2
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "schtasks.exe",
+    "ProcessCommandLine": "schtasks.exe /query /fo LIST",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  }
+]

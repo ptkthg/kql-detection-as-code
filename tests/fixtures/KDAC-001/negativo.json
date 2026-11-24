@@ -1,0 +1,29 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -File C:\\scripts\\backup.ps1",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -Command \"Get-Date | Out-File C:\\Temp\\data.txt -Encoding UTF8\"",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 101
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "cmd.exe",
+    "ProcessCommandLine": "cmd.exe /c echo -enc texto",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 102
+  }
+]

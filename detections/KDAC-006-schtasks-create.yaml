@@ -1,0 +1,34 @@
+id: KDAC-006
+titulo: Criação de tarefa agendada com schtasks
+descricao: Identifica criação de tarefas agendadas e destaca execução como SYSTEM ou ação em diretórios usualmente
+  graváveis. A criação pode dar persistência e executar comandos posteriormente.
+attack:
+- tecnica: T1053.005
+  nome: 'Scheduled Task/Job: Scheduled Task'
+  tatica: persistence
+- tecnica: T1053.005
+  nome: 'Scheduled Task/Job: Scheduled Task'
+  tatica: execution
+tabelas:
+- DeviceProcessEvents
+severidade: media
+falsos_positivos:
+- Instaladores e administradores criam tarefas legitimamente; valide autor, ação e agendamento.
+query: |
+  // Todo /create é retornado; os indicadores ajudam a priorizar a triagem.
+  DeviceProcessEvents
+  | where FileName =~ "schtasks.exe"
+  | where ProcessCommandLine matches regex @'(?i)(^|\s)/create(\s|$)'
+  | extend ExecutaComoSystem = ProcessCommandLine matches regex @'(?i)/ru\s+"?(SYSTEM|NT AUTHORITY\\SYSTEM)"?(\s|$)'
+  | extend AcaoEmPastaGravavel = ProcessCommandLine matches regex @'(?i)/tr\s+.*(\\users\\|\\temp\\|%temp%|%appdata%|%localappdata%|%userprofile%)'
+  | project Timestamp, DeviceName, AccountName, ProcessCommandLine, ExecutaComoSystem, AcaoEmPastaGravavel, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-006/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-006/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1053/005/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

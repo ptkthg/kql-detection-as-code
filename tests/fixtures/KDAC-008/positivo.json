@@ -1,0 +1,68 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-00@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-01@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-02@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-03@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-04@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-05@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-06@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-07@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-08@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "conta-09@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 50126
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "AccountUpn": "ana@contoso.example",
+    "IPAddress": "192.0.2.25",
+    "ErrorCode": 0
+  }
+]

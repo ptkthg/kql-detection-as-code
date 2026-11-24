@@ -1,0 +1,29 @@
+id: KDAC-005
+titulo: Possível dump do LSASS via comsvcs MiniDump
+descricao: Identifica rundll32 invocando MiniDump de comsvcs.dll. É um sinal de possível dump do LSASS, mas esta
+  telemetria não confirma qual processo corresponde ao PID alvo.
+attack:
+- tecnica: T1003.001
+  nome: 'OS Credential Dumping: LSASS Memory'
+  tatica: credential-access
+tabelas:
+- DeviceProcessEvents
+severidade: alta
+falsos_positivos:
+- Coleta autorizada de dumps para diagnóstico; confirme PID alvo, usuário e destino do arquivo.
+query: |
+  // Não há resolução do PID alvo nesta detecção de uma única tabela.
+  DeviceProcessEvents
+  | where FileName =~ "rundll32.exe"
+  | where ProcessCommandLine matches regex @'(?i)\bcomsvcs\.dll["\s]*,\s*MiniDump\b'
+  | project Timestamp, DeviceName, AccountName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-005/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-005/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1003/001/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

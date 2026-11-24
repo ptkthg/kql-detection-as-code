@@ -1,0 +1,20 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "msedge.exe",
+    "ProcessCommandLine": "msedge.exe https://contoso.example/ajuda",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 100
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "outlook.exe",
+    "ProcessCommandLine": "outlook.exe",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 101
+  }
+]

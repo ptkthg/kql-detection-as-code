@@ -1,0 +1,215 @@
+{
+  "tabela": "EntraIdSignInEvents",
+  "fonte": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-entraidsigninevents-table",
+  "conferido_em": "2026-11-24",
+  "colunas": [
+    {
+      "nome": "Timestamp",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "Application",
+      "tipo": "string"
+    },
+    {
+      "nome": "ApplicationId",
+      "tipo": "string"
+    },
+    {
+      "nome": "LogonType",
+      "tipo": "string"
+    },
+    {
+      "nome": "EndpointCall",
+      "tipo": "string"
+    },
+    {
+      "nome": "ErrorCode",
+      "tipo": "int"
+    },
+    {
+      "nome": "CorrelationId",
+      "tipo": "string"
+    },
+    {
+      "nome": "SessionId",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountDisplayName",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountObjectId",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountUpn",
+      "tipo": "string"
+    },
+    {
+      "nome": "IsExternalUser",
+      "tipo": "int"
+    },
+    {
+      "nome": "IsGuestUser",
+      "tipo": "boolean"
+    },
+    {
+      "nome": "AlternateSignInName",
+      "tipo": "string"
+    },
+    {
+      "nome": "LastPasswordChangeTimestamp",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "ResourceDisplayName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ResourceId",
+      "tipo": "string"
+    },
+    {
+      "nome": "ResourceTenantId",
+      "tipo": "string"
+    },
+    {
+      "nome": "DeviceName",
+      "tipo": "string"
+    },
+    {
+      "nome": "OSPlatform",
+      "tipo": "string"
+    },
+    {
+      "nome": "DeviceTrustType",
+      "tipo": "string"
+    },
+    {
+      "nome": "IsManaged",
+      "tipo": "int"
+    },
+    {
+      "nome": "IsCompliant",
+      "tipo": "int"
+    },
+    {
+      "nome": "AuthenticationProcessingDetails",
+      "tipo": "string"
+    },
+    {
+      "nome": "AuthenticationRequirement",
+      "tipo": "string"
+    },
+    {
+      "nome": "TokenIssuerType",
+      "tipo": "string"
+    },
+    {
+      "nome": "RiskLevelAggregated",
+      "tipo": "int"
+    },
+    {
+      "nome": "RiskLevelDuringSignIn",
+      "tipo": "int"
+    },
+    {
+      "nome": "RiskEventTypes",
+      "tipo": "string"
+    },
+    {
+      "nome": "RiskState",
+      "tipo": "int"
+    },
+    {
+      "nome": "UserAgent",
+      "tipo": "string"
+    },
+    {
+      "nome": "ClientAppUsed",
+      "tipo": "string"
+    },
+    {
+      "nome": "Browser",
+      "tipo": "string"
+    },
+    {
+      "nome": "ConditionalAccessPolicies",
+      "tipo": "string"
+    },
+    {
+      "nome": "ConditionalAccessStatus",
+      "tipo": "int"
+    },
+    {
+      "nome": "IPAddress",
+      "tipo": "string"
+    },
+    {
+      "nome": "Country",
+      "tipo": "string"
+    },
+    {
+      "nome": "State",
+      "tipo": "string"
+    },
+    {
+      "nome": "City",
+      "tipo": "string"
+    },
+    {
+      "nome": "Latitude",
+      "tipo": "string"
+    },
+    {
+      "nome": "Longitude",
+      "tipo": "string"
+    },
+    {
+      "nome": "NetworkLocationDetails",
+      "tipo": "string"
+    },
+    {
+      "nome": "RequestId",
+      "tipo": "string"
+    },
+    {
+      "nome": "ReportId",
+      "tipo": "string"
+    },
+    {
+      "nome": "EntraIdDeviceId",
+      "tipo": "string"
+    },
+    {
+      "nome": "GatewayJA4",
+      "tipo": "string"
+    },
+    {
+      "nome": "TenantId",
+      "tipo": "string"
+    },
+    {
+      "nome": "Type",
+      "tipo": "string"
+    },
+    {
+      "nome": "SourceSystem",
+      "tipo": "string"
+    },
+    {
+      "nome": "TimeGenerated",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "UniqueTokenId",
+      "tipo": "string"
+    },
+    {
+      "nome": "IsSignInThroughGlobalSecureAccess",
+      "tipo": "boolean"
+    }
+  ]
+}

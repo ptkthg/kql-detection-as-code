@@ -1,0 +1,29 @@
+id: KDAC-001
+titulo: PowerShell com comando codificado
+descricao: Identifica parâmetros de comando codificado do PowerShell. A codificação pode ocultar a intenção do script
+  e exige análise do conteúdo decodificado.
+attack:
+- tecnica: T1059.001
+  nome: 'Command and Scripting Interpreter: PowerShell'
+  tatica: execution
+tabelas:
+- DeviceProcessEvents
+severidade: media
+falsos_positivos:
+- Ferramentas de gerenciamento que usam -EncodedCommand legitimamente; ajuste por allowlist do contexto.
+query: |
+  // Parâmetro completo ou abreviação; o limite do token exclui -Encoding.
+  DeviceProcessEvents
+  | where FileName in~ ("powershell.exe", "pwsh.exe")
+  | where ProcessCommandLine matches regex @'(?i)(^|\s)-(e|ec|en|enc|enco|encod|encode|encoded|encodedc|encodedco|encodedcom|encodedcomm|encodedcomma|encodedcomman|encodedcommand)\s+\S+'
+  | project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-001/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-001/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1059/001/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

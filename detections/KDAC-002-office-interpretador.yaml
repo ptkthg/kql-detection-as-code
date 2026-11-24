@@ -1,0 +1,33 @@
+id: KDAC-002
+titulo: Office ou Outlook iniciando interpretador de script
+descricao: Identifica interpretadores iniciados diretamente por aplicativos Office ou Outlook. O vínculo pode indicar
+  execução após abertura de anexo, mas não comprova a origem do arquivo nem o phishing.
+attack:
+- tecnica: T1204.002
+  nome: 'User Execution: Malicious File'
+  tatica: execution
+- tecnica: T1566.001
+  nome: 'Phishing: Spearphishing Attachment'
+  tatica: initial-access
+tabelas:
+- DeviceProcessEvents
+severidade: alta
+falsos_positivos:
+- Macros administrativas e complementos legítimos podem iniciar interpretadores; valide documento e processo pai.
+query: |
+  // Pai e filho são comparados sem diferenciar maiúsculas.
+  DeviceProcessEvents
+  | where InitiatingProcessFileName in~ ("winword.exe", "excel.exe", "powerpnt.exe", "outlook.exe", "msaccess.exe", "mspub.exe", "onenote.exe")
+  | where FileName in~ ("cmd.exe", "powershell.exe", "pwsh.exe", "wscript.exe", "cscript.exe", "mshta.exe")
+  | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-002/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-002/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1204/002/
+- https://attack.mitre.org/techniques/T1566/001/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

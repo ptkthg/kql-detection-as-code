@@ -1,0 +1,29 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "rundll32.exe",
+    "ProcessCommandLine": "rundll32.exe shell32.dll,Control_RunDLL",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "rundll32.exe",
+    "ProcessCommandLine": "rundll32.exe comsvcs.dll,OutraFuncao",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 101
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "cmd.exe",
+    "ProcessCommandLine": "cmd.exe /c echo comsvcs.dll, MiniDump",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 102
+  }
+]

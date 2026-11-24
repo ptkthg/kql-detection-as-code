@@ -1,0 +1,65 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "cmd.exe",
+    "ProcessCommandLine": "cmd.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 1
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 2
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "pwsh.exe",
+    "ProcessCommandLine": "pwsh.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 3
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "wscript.exe",
+    "ProcessCommandLine": "wscript.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 4
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "cscript.exe",
+    "ProcessCommandLine": "cscript.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 5
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "mshta.exe",
+    "ProcessCommandLine": "mshta.exe exemplo",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 6
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "msedge.exe",
+    "ProcessCommandLine": "msedge.exe https://contoso.example/ajuda",
+    "InitiatingProcessFileName": "OUTLOOK.EXE",
+    "ReportId": 100
+  }
+]

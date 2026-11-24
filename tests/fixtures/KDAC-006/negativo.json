@@ -1,0 +1,29 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "schtasks.exe",
+    "ProcessCommandLine": "schtasks.exe /query /fo LIST",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "schtasks.exe",
+    "ProcessCommandLine": "schtasks.exe /delete /tn Exemplo",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 101
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "cmd.exe",
+    "ProcessCommandLine": "cmd.exe /c echo /create",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 102
+  }
+]

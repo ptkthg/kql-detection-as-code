@@ -1,0 +1,283 @@
+{
+  "tabela": "DeviceProcessEvents",
+  "fonte": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table",
+  "conferido_em": "2026-11-24",
+  "colunas": [
+    {
+      "nome": "Timestamp",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "DeviceId",
+      "tipo": "string"
+    },
+    {
+      "nome": "DeviceName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ActionType",
+      "tipo": "string"
+    },
+    {
+      "nome": "FileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "FolderPath",
+      "tipo": "string"
+    },
+    {
+      "nome": "SHA1",
+      "tipo": "string"
+    },
+    {
+      "nome": "SHA256",
+      "tipo": "string"
+    },
+    {
+      "nome": "MD5",
+      "tipo": "string"
+    },
+    {
+      "nome": "FileSize",
+      "tipo": "long"
+    },
+    {
+      "nome": "ProcessVersionInfoCompanyName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessVersionInfoProductName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessVersionInfoProductVersion",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessVersionInfoInternalFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessVersionInfoOriginalFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessVersionInfoFileDescription",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessId",
+      "tipo": "long"
+    },
+    {
+      "nome": "ProcessCommandLine",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessIntegrityLevel",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessTokenElevation",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessCreationTime",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "AccountDomain",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountName",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountSid",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountUpn",
+      "tipo": "string"
+    },
+    {
+      "nome": "AccountObjectId",
+      "tipo": "string"
+    },
+    {
+      "nome": "LogonId",
+      "tipo": "long"
+    },
+    {
+      "nome": "InitiatingProcessAccountDomain",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessAccountName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessAccountSid",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessAccountUpn",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessAccountObjectId",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessLogonId",
+      "tipo": "long"
+    },
+    {
+      "nome": "InitiatingProcessIntegrityLevel",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessTokenElevation",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessSHA1",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessSHA256",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessMD5",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessFileSize",
+      "tipo": "long"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoCompanyName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoProductName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoProductVersion",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoInternalFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoOriginalFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessVersionInfoFileDescription",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessId",
+      "tipo": "long"
+    },
+    {
+      "nome": "InitiatingProcessCommandLine",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessCreationTime",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "InitiatingProcessFolderPath",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessParentId",
+      "tipo": "long"
+    },
+    {
+      "nome": "InitiatingProcessParentFileName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessParentCreationTime",
+      "tipo": "datetime"
+    },
+    {
+      "nome": "InitiatingProcessSignerType",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessSignatureStatus",
+      "tipo": "string"
+    },
+    {
+      "nome": "ReportId",
+      "tipo": "long"
+    },
+    {
+      "nome": "AppGuardContainerId",
+      "tipo": "string"
+    },
+    {
+      "nome": "AdditionalFields",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessSessionId",
+      "tipo": "long"
+    },
+    {
+      "nome": "IsInitiatingProcessRemoteSession",
+      "tipo": "bool"
+    },
+    {
+      "nome": "InitiatingProcessRemoteSessionDeviceName",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessRemoteSessionIP",
+      "tipo": "string"
+    },
+    {
+      "nome": "CreatedProcessSessionId",
+      "tipo": "long"
+    },
+    {
+      "nome": "IsProcessRemoteSession",
+      "tipo": "bool"
+    },
+    {
+      "nome": "ProcessRemoteSessionDeviceName",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessRemoteSessionIP",
+      "tipo": "string"
+    },
+    {
+      "nome": "ProcessUniqueId",
+      "tipo": "string"
+    },
+    {
+      "nome": "InitiatingProcessUniqueId",
+      "tipo": "string"
+    },
+    {
+      "nome": "LogonID",
+      "tipo": "long"
+    }
+  ]
+}

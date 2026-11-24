@@ -1,0 +1,33 @@
+id: KDAC-004
+titulo: mshta remoto ou execução de script por binário do sistema
+descricao: Identifica mshta com URL ou esquema de script e rundll32 com javascript. Esses binários podem intermediar
+  execução de conteúdo não confiável.
+attack:
+- tecnica: T1218.005
+  nome: 'System Binary Proxy Execution: Mshta'
+  tatica: defense-evasion
+- tecnica: T1218.011
+  nome: 'System Binary Proxy Execution: Rundll32'
+  tatica: defense-evasion
+tabelas:
+- DeviceProcessEvents
+severidade: alta
+falsos_positivos:
+- Aplicações legadas que carregam HTA remoto ou esquemas de script; valide a origem do conteúdo.
+query: |
+  // HTA local de aplicativo instalado não satisfaz os esquemas abaixo.
+  DeviceProcessEvents
+  | where (FileName =~ "mshta.exe" and ProcessCommandLine matches regex @'(?i)(https?://|javascript:|vbscript:)')
+      or (FileName =~ "rundll32.exe" and ProcessCommandLine matches regex @'(?i)javascript:')
+  | project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-004/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-004/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1218/005/
+- https://attack.mitre.org/techniques/T1218/011/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

@@ -1,0 +1,77 @@
+{
+  "name": "KDAC — detecções v1",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "domain": "enterprise-attack",
+  "description": "Cobertura declarada pelas detecções sintéticas KDAC; não mede eficácia em produção.",
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "comment": "KDAC-005",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1053.005",
+      "comment": "KDAC-006",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1059.001",
+      "comment": "KDAC-001",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1098",
+      "comment": "KDAC-007",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1105",
+      "comment": "KDAC-003",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1110.003",
+      "comment": "KDAC-008",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1136.001",
+      "comment": "KDAC-007",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1204.002",
+      "comment": "KDAC-002",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1218.005",
+      "comment": "KDAC-004",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1218.011",
+      "comment": "KDAC-004",
+      "enabled": true,
+      "color": "#4a90d9"
+    },
+    {
+      "techniqueID": "T1566.001",
+      "comment": "KDAC-002",
+      "enabled": true,
+      "color": "#4a90d9"
+    }
+  ]
+}

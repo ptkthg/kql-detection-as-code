@@ -1,0 +1,31 @@
+id: KDAC-003
+titulo: certutil baixando arquivo
+descricao: Correlaciona opções de cache e transferência do certutil com uma URL HTTP ou HTTPS. O uso pode representar
+  transferência de ferramenta para o host.
+attack:
+- tecnica: T1105
+  nome: Ingress Tool Transfer
+  tatica: command-and-control
+tabelas:
+- DeviceProcessEvents
+severidade: media
+falsos_positivos:
+- Distribuição administrativa de arquivos com certutil; valide URL, destino e processo pai.
+query: |
+  // Exige -urlcache, uma opção de transferência e URL, não apenas o binário.
+  DeviceProcessEvents
+  | where FileName =~ "certutil.exe"
+  | where ProcessCommandLine matches regex @'(?i)(^|\s)-urlcache(\s|$)'
+  | where ProcessCommandLine matches regex @'(?i)(^|\s)-(f|split)(\s|$)'
+  | where ProcessCommandLine matches regex @'(?i)\bhttps?://[^\s]+'
+  | project Timestamp, DeviceName, AccountName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-003/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-003/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1105/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table

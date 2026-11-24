@@ -1,0 +1,155 @@
+[
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -enc VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 1
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -EncodedCommand VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 2
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -ec VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 3
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -e VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 4
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -en VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 5
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -enco VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 6
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encod VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 7
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encode VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 8
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encoded VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 9
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedc VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 10
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedco VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 11
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedcom VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 12
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedcomm VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 13
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedcomma VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 14
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -encodedcomman VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 15
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "PWSH.EXE",
+    "ProcessCommandLine": "pwsh.exe -ENC VwByAGkAdABlAC0ASABvAHMAdAAgADEA",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 16
+  },
+  {
+    "Timestamp": "2026-01-01T10:05:00Z",
+    "DeviceName": "host-01",
+    "AccountName": "ana",
+    "FileName": "powershell.exe",
+    "ProcessCommandLine": "powershell.exe -File C:\\scripts\\backup.ps1",
+    "InitiatingProcessFileName": "explorer.exe",
+    "ReportId": 100
+  }
+]

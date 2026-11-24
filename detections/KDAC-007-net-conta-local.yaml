@@ -1,0 +1,36 @@
+id: KDAC-007
+titulo: Criação de conta local ou inclusão em administradores
+descricao: Identifica net e net1 criando contas ou adicionando membros ao grupo administrators. As operações podem
+  estabelecer persistência e ampliar o acesso local.
+attack:
+- tecnica: T1136.001
+  nome: 'Create Account: Local Account'
+  tatica: persistence
+- tecnica: T1098
+  nome: Account Manipulation
+  tatica: persistence
+tabelas:
+- DeviceProcessEvents
+severidade: alta
+falsos_positivos:
+- Provisionamento autorizado de contas e gestão do grupo local; valide chamado e identidade do operador.
+query: |
+  // A opção /domain muda o escopo: esta regra cobre somente contas locais.
+  DeviceProcessEvents
+  | where FileName in~ ("net.exe", "net1.exe")
+  | where ProcessCommandLine matches regex @'(?i)(^|\s)/add(\s|$)'
+  | where not(ProcessCommandLine matches regex @'(?i)(^|\s)/domain(\s|$)')
+  | where ProcessCommandLine matches regex @'(?i)\bnet1?(\.exe)?"?\s+user\s+\S+'
+      or ProcessCommandLine matches regex @'(?i)\bnet1?(\.exe)?"?\s+localgroup\s+"?administrators"?\s+\S+'
+  | project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine, ReportId
+testes:
+  positivo:
+    fixture: tests/fixtures/KDAC-007/positivo.json
+    minimo: 1
+  negativo:
+    fixture: tests/fixtures/KDAC-007/negativo.json
+    maximo: 0
+referencias:
+- https://attack.mitre.org/techniques/T1136/001/
+- https://attack.mitre.org/techniques/T1098/
+- https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceprocessevents-table
